@@ -6,3 +6,7 @@
 1 2 3 4 5 3 -> 1
 """
 
+from random import randint
+ArreyName = [randint(1, 9) for i in range(int(input('Введите размер массива: ')))]
+print(ArreyName)
+print('Встречается', ArreyName.count(int(input('Введите искомое число: '))), 'раз')
